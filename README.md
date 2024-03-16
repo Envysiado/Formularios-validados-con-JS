@@ -1,6 +1,6 @@
 # Formularios-validados-con-JS
 
-# Descripción de las Etiquetas "<input>" y "<button>"
+# Descripción de las Etiquetas "input" y "button"
 
 ## Etiqueta <input>
 
