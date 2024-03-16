@@ -1,46 +1,40 @@
 # Formularios-validados-con-JS
 
-# Funcionamiento de la etiqueta `<input>`
+# Funcionamiento de las Etiquetas HTML en Formularios Web
 
-La etiqueta `<input>` se utiliza para crear campos de entrada interactivos en formularios web. Puede tomar varios tipos de entrada dependiendo del valor del atributo `type`.
+Este README proporciona una visión general del funcionamiento de las etiquetas HTML `<input>` y `<button>` en formularios web, así como la validación de entradas.
 
-### Tipos de entrada:
+## Etiqueta `<input>`
 
-- **Text**: Este es el tipo de entrada predeterminado. Se utiliza para permitir a los usuarios ingresar texto.
-  ```html
-  <input type="text" name="nombre">
+La etiqueta `<input>` se utiliza para crear campos de entrada interactivos en formularios web. Puede tomar varios tipos de entrada, como texto, contraseña, casilla de verificación, botón de radio, número, fecha, entre otros. A continuación, se muestran algunos ejemplos de uso:
 
-- **Password**: Este tipo de entrada oculta el texto ingresado, generalmente se usa para contraseñas.
+- Texto: `<input type="text" name="nombre">`
+- Contraseña: `<input type="password" name="contrasena">`
+- Casilla de Verificación: `<input type="checkbox" name="opcion" value="valor">`
+- Botón de Radio: `<input type="radio" name="opcion" value="valor1">`
+- Número: `<input type="number" name="edad">`
+- Fecha: `<input type="date" name="fechaNacimiento">`
 
-  ```html
-  <input type="password" name="contrasena">
+Además del atributo `type`, se pueden utilizar otros atributos como `name`, `value`, `placeholder`, `required`, `readonly`, `disabled`, entre otros, para personalizar su comportamiento y apariencia.
 
-- **Checkbox**: Se utiliza para permitir a los usuarios seleccionar múltiples opciones de una lista.
+## Etiqueta `<button>`
 
-  ```html
-  <input type="checkbox" name="opcion" value="valor">
+La etiqueta `<button>` se utiliza para crear botones interactivos en una página web. Puede contener texto, imágenes u otros elementos HTML. A continuación, se muestra un ejemplo de uso:
 
-- **Radio**: Similar a un checkbox, pero solo se puede seleccionar una opción de una lista.
+- Texto del Botón: `<button>Enviar</button>`
+- Imagen como Botón: `<button><img src="boton.png" alt="Enviar"></button>`
 
-  ```html
-  <input type="radio" name="opcion" value="valor1">
-  <input type="radio" name="opcion" value="valor2">
+Se pueden utilizar varios atributos, como `onclick`, `type`, `class`, `id`, `style`, etc., para personalizar su comportamiento y apariencia.
 
-- **Number**: Se utiliza para permitir a los usuarios ingresar un número.
+## Validación de las Entradas
 
- ```html
-  <input type="number" name="edad">
+En la validación de las entradas, se utilizan expresiones regulares y comprobaciones para asegurar que los campos del formulario contengan datos válidos. Algunos de los campos validados incluyen ID, nombre y apellidos, teléfono, correo electrónico, edad y fecha de nacimiento.
 
-##
-Estos son solo algunos ejemplos de los muchos tipos de entrada que puede crear con la etiqueta <input>.
+## Uso de Eventos en Formularios
 
-Atributos adicionales:
-Además del atributo type, hay varios otros atributos que puede usar con la etiqueta <input> para personalizar su comportamiento y apariencia:
+En proyectos más complejos, se puede utilizar el método `addEventListener` para adjuntar eventos, como el evento de "submit", al formulario. Este evento se dispara cuando se envía el formulario y se utiliza para manejar la validación del mismo y realizar acciones como prevenir el comportamiento predeterminado del envío del formulario y mostrar mensajes de error o éxito.
 
-name: Identifica el campo de entrada cuando se envía el formulario.
-value: Define el valor inicial del campo de entrada.
-placeholder: Proporciona un texto de marcador de posición que se muestra cuando el campo está vacío.
-required: Indica que el campo es obligatorio y no se puede enviar el formulario sin completarlo.
-readonly: Hace que el campo sea de solo lectura y no se pueda modificar.
-disabled: Deshabilita el campo de entrada para que no se pueda seleccionar ni modificar.
+Este README proporciona una visión general del funcionamiento de las etiquetas HTML en formularios web y la validación de entradas. Para más detalles sobre cómo implementar estas características, consulte la documentación oficial de HTML y JavaScript.
+
+
 
