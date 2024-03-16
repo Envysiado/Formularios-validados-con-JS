@@ -12,29 +12,30 @@ La etiqueta `<input>` se utiliza para crear campos de entrada interactivos en fo
 
 - **Password**: Este tipo de entrada oculta el texto ingresado, generalmente se usa para contraseñas.
 
-```html
-<input type="password" name="contrasena">
+  ```html
+  <input type="password" name="contrasena">
 
 - **Checkbox**: Se utiliza para permitir a los usuarios seleccionar múltiples opciones de una lista.
 
+  ```html
+  <input type="checkbox" name="opcion" value="valor">
+
+- **Radio**: Similar a un checkbox, pero solo se puede seleccionar una opción de una lista.
+
+  ```html
+  <input type="radio" name="opcion" value="valor1">
+  <input type="radio" name="opcion" value="valor2">
+
+- **Number**: Se utiliza para permitir a los usuarios ingresar un número.
+
+ ```html
+  <input type="number" name="edad">
+
+- **Date**: Se utiliza para permitir a los usuarios seleccionar una fecha.
+
 ```html
-<input type="checkbox" name="opcion" value="valor">
-Radio: Similar a un checkbox, pero solo se puede seleccionar una opción de una lista.
-
-html
-Copy code
-<input type="radio" name="opcion" value="valor1">
-<input type="radio" name="opcion" value="valor2">
-Number: Se utiliza para permitir a los usuarios ingresar un número.
-
-html
-Copy code
-<input type="number" name="edad">
-Date: Se utiliza para permitir a los usuarios seleccionar una fecha.
-
-html
-Copy code
 <input type="date" name="fechaNacimiento">
+
 Estos son solo algunos ejemplos de los muchos tipos de entrada que puede crear con la etiqueta <input>.
 
 Atributos adicionales:
