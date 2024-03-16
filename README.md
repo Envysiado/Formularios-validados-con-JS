@@ -31,7 +31,7 @@ La etiqueta `<input>` se utiliza para crear campos de entrada interactivos en fo
  ```html
   <input type="number" name="edad">
 
-
+##
 Estos son solo algunos ejemplos de los muchos tipos de entrada que puede crear con la etiqueta <input>.
 
 Atributos adicionales:
