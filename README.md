@@ -2,7 +2,7 @@
 
 # Funcionamiento de las Etiquetas HTML en Formularios Web
 
-Este README proporciona una visión general del funcionamiento de las etiquetas HTML `<input>` y `<button>` en formularios web, así como la validación de entradas.
+
 
 ## Etiqueta `<input>`
 
