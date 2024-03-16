@@ -30,11 +30,35 @@ Se pueden utilizar varios atributos, como `onclick`, `type`, `class`, `id`, `sty
 
 En la validación de las entradas, se utilizan expresiones regulares y comprobaciones para asegurar que los campos del formulario contengan datos válidos. Algunos de los campos validados incluyen ID, nombre y apellidos, teléfono, correo electrónico, edad y fecha de nacimiento.
 
-## Uso de Eventos en Formularios
+## Uso de Evento
 
-En proyectos más complejos, se puede utilizar el método `addEventListener` para adjuntar eventos, como el evento de "submit", al formulario. Este evento se dispara cuando se envía el formulario y se utiliza para manejar la validación del mismo y realizar acciones como prevenir el comportamiento predeterminado del envío del formulario y mostrar mensajes de error o éxito.
+En este proyecto, se utilizó el método addEventListener para adjuntar un evento de "submit" al formulario. Este evento se dispara cuando se envía el formulario.
 
-Este README proporciona una visión general del funcionamiento de las etiquetas HTML en formularios web y la validación de entradas. Para más detalles sobre cómo implementar estas características, consulte la documentación oficial de HTML y JavaScript.
+`formulario.addEventListener("submit", function(event) {
+    // Código para manejar el envío del formulario
+});`
+
+Previene el comportamiento predeterminado de enviar el formulario utilizando event.preventDefault();.
+
+Obtiene los valores de los campos del formulario, como ID, nombre, apellidos, teléfono, correo electrónico, edad y fecha de nacimiento.
+
+Realiza validaciones específicas para cada campo del formulario, asegurando que cumplan con ciertos criterios:
+
+Verifica que el ID tenga exactamente 5 dígitos.
+
+Asegura que tanto el nombre como los apellidos no estén vacíos.
+
+Formatea el campo de teléfono para que coincida con el formato (###)###-#### y luego verifica que tenga este formato.
+
+Verifica que el correo electrónico tenga un formato válido.
+
+Asegura que la edad sea un número positivo mayor que cero.
+
+Verifica que la fecha de nacimiento tenga el formato AAAA-MM-DD.
+
+Muestra mensajes de error en caso de que alguna validación falle, indicando qué campos tienen errores específicos.
+
+En caso de que todos los campos pasen las validaciones, muestra un mensaje de éxito indicando que el formulario se ha enviado correctamente.
 
 
 
